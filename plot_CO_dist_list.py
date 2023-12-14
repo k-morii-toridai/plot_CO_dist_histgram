@@ -106,7 +106,7 @@ def mk_fig_histgram_under200pm(array, figsize=6):
     # y軸を指数表示
     axes.ticklabel_format(style="sci",  axis="y", scilimits=(0, 0))
     # 凡例の設定
-    axes.legend(loc='upper left', bbox_to_anchor=(0.01, 0.99))  # 凡例を表示
+    axes.legend(loc='upper left', bbox_to_anchor=(0.01, 0.99), fontsize=fontsize-3)  # 凡例を表示
     # save
     f_name = f'figure/xlim_under200pm/size_{figsize}_{figsize}/'
     None if os.path.exists(f_name) else os.makedirs(f_name)
