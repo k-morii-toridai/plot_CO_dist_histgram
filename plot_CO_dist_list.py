@@ -127,7 +127,7 @@ def mk_fig_histgram_under200pm(array, figsize=6):
 args = sys.argv
 args[1] = int(args[1])
 # make a histgram of CO-bond distances under 5Å
-CO_bond_dist_1d_list_loaded = np.load('CO_bond_dist_1d_list.npy', allow_pickle=True)
+CO_bond_dist_1d_list_loaded = np.load('CO_dist_1d_list.npy', allow_pickle=True)
 mk_fig_histgram(array=CO_bond_dist_1d_list_loaded, figsize=args[1])
 print(f"A histgram of CO-bond distances under 5Å was made \n\
 and saved at figure/under500pm/size_{args[1]}_{args[1]}/")
