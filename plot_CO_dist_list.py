@@ -27,7 +27,7 @@ def mk_fig_histgram(array, figsize=6):
     fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(figsize, figsize))
     sns.histplot(array,
                  ax=axes,
-                 label='carbon-oxygen bond',
+                 label='carbon-oxygen distance',
                  color='lightgray',
                  edgecolor=None,)
     # タイトルの設定
@@ -85,7 +85,7 @@ def mk_fig_histgram_under200pm(array, figsize=6):
     fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(figsize, figsize))
     sns.histplot(array,
                  ax=axes,
-                 label='carbon-oxygen bond',
+                 label='carbon-oxygen distance',
                  color='lightgray',
                  edgecolor=None,)
     # タイトルの設定
