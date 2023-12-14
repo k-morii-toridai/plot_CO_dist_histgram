@@ -1,4 +1,3 @@
-# CO結合距離のヒストグラムを描画
 import os
 import sys
 
